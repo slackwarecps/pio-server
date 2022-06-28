@@ -5,10 +5,9 @@
 name: Gera e sobe no Docker Hub
 
 on:
-  release:
   push:
-    branches:
-      - develop
+    branches:    
+      - 'develop'
 #on:
 #  workflow_dispatch:
 
