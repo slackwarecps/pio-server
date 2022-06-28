@@ -49,5 +49,6 @@ jobs:
 
     steps:
       - name: Nada por enquanto 
+        run: echo 'nada por enquanto'
 
 
