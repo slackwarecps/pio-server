@@ -1,8 +1,7 @@
-FROM alpine:3.14
+FROM fabioalvaro/alpinejdk11
 
 RUN  apk update \
   && apk upgrade \
-  && apk add --update openjdk11 tzdata curl unzip bash \
   && rm -rf /var/cache/apk/*
 
 ENV AMBIENTE="--server.port=8077"
@@ -14,6 +13,8 @@ WORKDIR /opt/aplicacao
 COPY build/libs/$APP_NAME.jar app.jar
 COPY start.sh .
 RUN chmod a+x start.sh
+
+RUN echo AMBIENTE= $AMBIENTE
 
 CMD [ "/bin/bash", "-c", "./start.sh"]
 
