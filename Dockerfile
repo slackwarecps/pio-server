@@ -15,5 +15,7 @@ COPY build/libs/$APP_NAME.jar app.jar
 COPY start.sh .
 RUN chmod a+x start.sh
 
+RUN echo AMBIENTE= $AMBIENTE
+
 CMD [ "/bin/bash", "-c", "./start.sh"]
 
