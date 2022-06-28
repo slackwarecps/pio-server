@@ -2,10 +2,9 @@
 # São fornecidas por terceiros e regidas por
 # termos de serviço, política de privacidade e suporte separados
 # documentação.
-
 name: Gera e sobe no Docker Hub
 
-#on:
+on:
   release:
     types: [published]
 #on:
