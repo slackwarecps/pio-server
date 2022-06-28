@@ -3,7 +3,7 @@ version: "2.1"
 
 services:
   pio-server:
-    image: fabioalvaro/pio-server:dev
+    image: fabioalvaro/alpinejdk11
     ports:
       - "8033:8033"
     environment:
