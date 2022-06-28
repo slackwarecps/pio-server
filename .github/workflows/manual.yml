@@ -36,3 +36,7 @@ jobs:
     # Runs a single command using the runners shell
     - name: Da um salve vei
       run: echo "É nois Broooo ${{ github.event.inputs.name }}"
+
+      # Runs a single command using the runners shell
+    - name: Diga oi
+      run: echo "Oi ${{ github.event.inputs.name }}"
