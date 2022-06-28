@@ -3,7 +3,7 @@
 # termos de serviço, política de privacidade e suporte separados
 # documentação.
 
-name: Gera a imagem e sobe no Docker Hub
+name: Gera e sobe no Docker Hub
 
 #on:
 #  release:
