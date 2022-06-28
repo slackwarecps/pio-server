@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.311s</div>
+<div class="counter">0.238s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,7 +79,7 @@
 </thead>
 <tr>
 <td class="success">contextLoads()</td>
-<td class="success">0.311s</td>
+<td class="success">0.238s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -87,23 +87,120 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>20:24:28.625 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
-20:24:28.633 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
-20:24:28.660 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [br.com.fabioalvaro.pioserver.PioServerApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
-20:24:28.669 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [br.com.fabioalvaro.pioserver.PioServerApplicationTests], using SpringBootContextLoader
-20:24:28.672 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [br.com.fabioalvaro.pioserver.PioServerApplicationTests]: class path resource [br/com/fabioalvaro/pioserver/PioServerApplicationTests-context.xml] does not exist
-20:24:28.673 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [br.com.fabioalvaro.pioserver.PioServerApplicationTests]: class path resource [br/com/fabioalvaro/pioserver/PioServerApplicationTestsContext.groovy] does not exist
-20:24:28.673 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [br.com.fabioalvaro.pioserver.PioServerApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
-20:24:28.673 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [br.com.fabioalvaro.pioserver.PioServerApplicationTests]: PioServerApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-20:24:28.710 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [br.com.fabioalvaro.pioserver.PioServerApplicationTests]
-20:24:28.758 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/fabioalvaro/workspaces/diversos2/pio-server/build/classes/java/main/br/com/fabioalvaro/pioserver/PioServerApplication.class]
-20:24:28.759 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration br.com.fabioalvaro.pioserver.PioServerApplication for test class br.com.fabioalvaro.pioserver.PioServerApplicationTests
-20:24:28.828 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [br.com.fabioalvaro.pioserver.PioServerApplicationTests]: using defaults.
-20:24:28.828 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-20:24:28.838 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/TransactionDefinition]
-20:24:28.838 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
-20:24:28.838 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@241a53ef, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@344344fa, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@2db2cd5, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@70e659aa, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@615f972, org.springframework.test.context.support.DirtiesContextTestExecutionListener@285f09de, org.springframework.test.context.event.EventPublishingTestExecutionListener@73393584, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@31500940, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1827a871, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@48e64352, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7249dadf, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@4362d7df, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@66238be2]
-20:24:28.841 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@402f80f5 testClass = PioServerApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@5bbc9f97 testClass = PioServerApplicationTests, locations = '{}', classes = '{class br.com.fabioalvaro.pioserver.PioServerApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@43aaf813, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@55342f40, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@2a2c13a8, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@3543df7d, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@78fbff54, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@20bd8be5], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; true]], class annotated with @DirtiesContext [false] with mode [null].
+<pre>09:02:07,365 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+09:02:07,365 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/Users/fabioalvaro/workspaces/diversos2/pio-server/build/resources/main/logback.xml]
+09:02:07,414 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+09:02:07,414 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+09:02:07,418 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [stdout]
+09:02:07,433 |-WARN in ch.qos.logback.classic.pattern.DateConverter@62e6b5c8 - Could not instantiate SimpleDateFormat with pattern DATE java.lang.IllegalArgumentException: Illegal pattern character 'A'
+	at java.lang.IllegalArgumentException: Illegal pattern character 'A'
+	at 	at java.base/java.text.SimpleDateFormat.compile(SimpleDateFormat.java:845)
+	at 	at java.base/java.text.SimpleDateFormat.initialize(SimpleDateFormat.java:653)
+	at 	at java.base/java.text.SimpleDateFormat.&lt;init&gt;(SimpleDateFormat.java:624)
+	at 	at java.base/java.text.SimpleDateFormat.&lt;init&gt;(SimpleDateFormat.java:599)
+	at 	at ch.qos.logback.core.util.CachingDateFormatter.&lt;init&gt;(CachingDateFormatter.java:33)
+	at 	at ch.qos.logback.classic.pattern.DateConverter.start(DateConverter.java:41)
+	at 	at ch.qos.logback.core.pattern.ConverterUtil.startConverters(ConverterUtil.java:37)
+	at 	at ch.qos.logback.core.pattern.PatternLayoutBase.start(PatternLayoutBase.java:89)
+	at 	at ch.qos.logback.classic.encoder.PatternLayoutEncoder.start(PatternLayoutEncoder.java:28)
+	at 	at ch.qos.logback.core.joran.action.NestedComplexPropertyIA.end(NestedComplexPropertyIA.java:161)
+	at 	at ch.qos.logback.core.joran.spi.Interpreter.callEndAction(Interpreter.java:309)
+	at 	at ch.qos.logback.core.joran.spi.Interpreter.endElement(Interpreter.java:193)
+	at 	at ch.qos.logback.core.joran.spi.Interpreter.endElement(Interpreter.java:179)
+	at 	at ch.qos.logback.core.joran.spi.EventPlayer.play(EventPlayer.java:62)
+	at 	at ch.qos.logback.core.joran.GenericConfigurator.doConfigure(GenericConfigurator.java:165)
+	at 	at ch.qos.logback.core.joran.GenericConfigurator.doConfigure(GenericConfigurator.java:152)
+	at 	at ch.qos.logback.core.joran.GenericConfigurator.doConfigure(GenericConfigurator.java:110)
+	at 	at ch.qos.logback.core.joran.GenericConfigurator.doConfigure(GenericConfigurator.java:53)
+	at 	at ch.qos.logback.classic.util.ContextInitializer.configureByResource(ContextInitializer.java:64)
+	at 	at ch.qos.logback.classic.util.ContextInitializer.autoConfig(ContextInitializer.java:134)
+	at 	at org.slf4j.impl.StaticLoggerBinder.init(StaticLoggerBinder.java:84)
+	at 	at org.slf4j.impl.StaticLoggerBinder.&lt;clinit&gt;(StaticLoggerBinder.java:55)
+	at 	at org.slf4j.LoggerFactory.bind(LoggerFactory.java:150)
+	at 	at org.slf4j.LoggerFactory.performInitialization(LoggerFactory.java:124)
+	at 	at org.slf4j.LoggerFactory.getILoggerFactory(LoggerFactory.java:417)
+	at 	at org.slf4j.LoggerFactory.getLogger(LoggerFactory.java:362)
+	at 	at org.apache.commons.logging.LogAdapter$Slf4jAdapter.createLocationAwareLog(LogAdapter.java:130)
+	at 	at org.apache.commons.logging.LogAdapter.createLog(LogAdapter.java:91)
+	at 	at org.apache.commons.logging.LogFactory.getLog(LogFactory.java:67)
+	at 	at org.apache.commons.logging.LogFactory.getLog(LogFactory.java:59)
+	at 	at org.springframework.test.context.TestContextManager.&lt;clinit&gt;(TestContextManager.java:92)
+	at 	at org.junit.jupiter.engine.execution.ExtensionValuesStore.lambda$getOrComputeIfAbsent$4(ExtensionValuesStore.java:86)
+	at 	at org.junit.jupiter.engine.execution.ExtensionValuesStore$MemoizingSupplier.computeValue(ExtensionValuesStore.java:223)
+	at 	at org.junit.jupiter.engine.execution.ExtensionValuesStore$MemoizingSupplier.get(ExtensionValuesStore.java:211)
+	at 	at org.junit.jupiter.engine.execution.ExtensionValuesStore$StoredValue.evaluate(ExtensionValuesStore.java:191)
+	at 	at org.junit.jupiter.engine.execution.ExtensionValuesStore$StoredValue.access$100(ExtensionValuesStore.java:171)
+	at 	at org.junit.jupiter.engine.execution.ExtensionValuesStore.getOrComputeIfAbsent(ExtensionValuesStore.java:89)
+	at 	at org.junit.jupiter.engine.execution.ExtensionValuesStore.getOrComputeIfAbsent(ExtensionValuesStore.java:93)
+	at 	at org.junit.jupiter.engine.execution.NamespaceAwareStore.getOrComputeIfAbsent(NamespaceAwareStore.java:61)
+	at 	at org.springframework.test.context.junit.jupiter.SpringExtension.getTestContextManager(SpringExtension.java:294)
+	at 	at org.springframework.test.context.junit.jupiter.SpringExtension.beforeAll(SpringExtension.java:113)
+	at 	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeBeforeAllCallbacks$10(ClassBasedTestDescriptor.java:381)
+	at 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at 	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeBeforeAllCallbacks(ClassBasedTestDescriptor.java:381)
+	at 	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.before(ClassBasedTestDescriptor.java:205)
+	at 	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.before(ClassBasedTestDescriptor.java:80)
+	at 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:148)
+	at 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at 	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at 	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at 	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at 	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at 	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at 	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at 	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:108)
+	at 	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at 	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at 	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at 	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at 	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:96)
+	at 	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:75)
+	at 	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
+	at 	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
+	at 	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
+	at 	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at 	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at 	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at 	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at 	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at 	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at 	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at 	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at 	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at 	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at 	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at 	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+	at 	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+09:02:07,433 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to INFO
+09:02:07,433 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [stdout] to Logger[ROOT]
+09:02:07,434 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+09:02:07,434 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@1af146 - Registering current configuration as safe fallback point
+
+timestamp=2022-06-28 09:02:07,483 level=INFO x-correlation-id= correlation-id= class=org.springframework.boot.test.context.SpringBootTestContextBootstrapper - message=Neither @ContextConfiguration nor @ContextHierarchy found for test class [br.com.fabioalvaro.pioserver.PioServerApplicationTests], using SpringBootContextLoader
+timestamp=2022-06-28 09:02:07,487 level=INFO x-correlation-id= correlation-id= class=org.springframework.test.context.support.AbstractContextLoader - message=Could not detect default resource locations for test class [br.com.fabioalvaro.pioserver.PioServerApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+timestamp=2022-06-28 09:02:07,488 level=INFO x-correlation-id= correlation-id= class=org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - message=Could not detect default configuration classes for test class [br.com.fabioalvaro.pioserver.PioServerApplicationTests]: PioServerApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+timestamp=2022-06-28 09:02:07,562 level=INFO x-correlation-id= correlation-id= class=org.springframework.boot.test.context.SpringBootTestContextBootstrapper - message=Found @SpringBootConfiguration br.com.fabioalvaro.pioserver.PioServerApplication for test class br.com.fabioalvaro.pioserver.PioServerApplicationTests
+timestamp=2022-06-28 09:02:07,639 level=INFO x-correlation-id= correlation-id= class=org.springframework.boot.test.context.SpringBootTestContextBootstrapper - message=Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+timestamp=2022-06-28 09:02:07,647 level=INFO x-correlation-id= correlation-id= class=org.springframework.boot.test.context.SpringBootTestContextBootstrapper - message=Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@15515c51, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@36a7abe1, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@64a896b0, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@e044b4a, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@11a82d0f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1adb7478, org.springframework.test.context.event.EventPublishingTestExecutionListener@3ae66c85, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@16943e88, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4604b900, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@73d6d0c, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@e36bb2a, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@3961a41a, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5a4ed68f]
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -113,10 +210,10 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v2.7.1)
 
-2022-06-27 20:24:29.133  INFO [,,] 22016 --- [    Test worker] b.c.f.p.PioServerApplicationTests        : Starting PioServerApplicationTests using Java 11.0.15 on ip-192-168-1-101.sa-east-1.compute.internal with PID 22016 (started by fabioalvaro in /Users/fabioalvaro/workspaces/diversos2/pio-server)
-2022-06-27 20:24:29.134  INFO [,,] 22016 --- [    Test worker] b.c.f.p.PioServerApplicationTests        : No active profile set, falling back to 1 default profile: &quot;default&quot;
-2022-06-27 20:24:29.756  INFO [,,] 22016 --- [    Test worker] o.s.cloud.context.scope.GenericScope     : BeanFactory id=4d4fda61-ebc3-3c24-a6aa-12eff31cd140
-2022-06-27 20:24:31.287  INFO [,,] 22016 --- [    Test worker] b.c.f.p.PioServerApplicationTests        : Started PioServerApplicationTests in 2.403 seconds (JVM running for 3.355)
+timestamp=2022-06-28 09:02:08,048 level=INFO x-correlation-id= correlation-id= class=br.com.fabioalvaro.pioserver.PioServerApplicationTests - message=Starting PioServerApplicationTests using Java 11.0.15 on thundercat.local with PID 9794 (started by fabioalvaro in /Users/fabioalvaro/workspaces/diversos2/pio-server)
+timestamp=2022-06-28 09:02:08,049 level=INFO x-correlation-id= correlation-id= class=br.com.fabioalvaro.pioserver.PioServerApplicationTests - message=No active profile set, falling back to 1 default profile: &quot;default&quot;
+timestamp=2022-06-28 09:02:08,641 level=INFO x-correlation-id= correlation-id= class=org.springframework.cloud.context.scope.GenericScope - message=BeanFactory id=4d4fda61-ebc3-3c24-a6aa-12eff31cd140
+timestamp=2022-06-28 09:02:09,999 level=INFO x-correlation-id= correlation-id= class=br.com.fabioalvaro.pioserver.PioServerApplicationTests - message=Started PioServerApplicationTests in 2.323 seconds (JVM running for 3.269)
 </pre>
 </span>
 </div>
@@ -128,7 +225,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.4.1</a> at 27 de jun de 2022 20:24:31</p>
+<a href="http://www.gradle.org">Gradle 7.4.2</a> at 28 de jun de 2022 09:02:10</p>
 </div>
 </div>
 </body>
