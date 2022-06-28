@@ -1,8 +1,7 @@
-FROM alpine:3.14
+FROM fabioalvaro/alpinejdk11
 
 RUN  apk update \
   && apk upgrade \
-  && apk add --update openjdk11 tzdata curl unzip bash \
   && rm -rf /var/cache/apk/*
 
 ENV AMBIENTE="--server.port=8077"
