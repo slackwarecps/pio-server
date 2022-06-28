@@ -6,8 +6,8 @@ name: Gera e sobe no Docker Hub
 
 on:
   push:
-    branches:    
-      - 'develop'
+    tags:    
+      - stage-*
 #on:
 #  workflow_dispatch:
 
