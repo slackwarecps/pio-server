@@ -6,7 +6,9 @@ name: Gera e sobe no Docker Hub
 
 on:
   release:
-    types: [published]
+  push:
+    branches:
+      - develop
 #on:
 #  workflow_dispatch:
 
