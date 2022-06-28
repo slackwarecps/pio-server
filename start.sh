@@ -8,4 +8,5 @@ fi
 
 
 #java $SPRING_BOOT_VM_OPTIONS -jar app.jar $AMBIENTE
-java -jar app.jar
+#Sobe com a porta definida pelo parametro
+java -jar app.jar "$AMBIENTE"
